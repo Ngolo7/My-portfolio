@@ -21,28 +21,27 @@ const About = () => {
               seamless and efficient user experiences.
             </p>
             <div className="space-y-4">
-              <SkillBar skillName="HTML & CSS" proficiency="11/12" />
-              <SkillBar skillName="React JS" proficiency="10/12" />
-              <SkillBar skillName="Node JS" proficiency="9/12" />
-              <SkillBar skillName="Spring Boot" proficiency="9/12" />
-              <SkillBar skillName="MongoDB" proficiency="8/12" />
-              <SkillBar skillName="MySQL" proficiency="9/12" />
-              <SkillBar skillName="Git" proficiency="10/12" />
-              <SkillBar skillName="Tailwind CSS" proficiency="11/12" />
-              <SkillBar skillName="Bootstrap" proficiency="8/12" />
-              <SkillBar skillName="Java" proficiency="10/12" />
-              <SkillBar skillName="JavaScript" proficiency="9/12" />
-              <SkillBar skillName="Python" proficiency="4/12" />
-              <SkillBar skillName="C++" proficiency="8/12" />
-              <SkillBar skillName="SQL" proficiency="7/12" />
-              <SkillBar skillName="PostgreSQL" proficiency="5/12" />
-              <SkillBar skillName="Firebase" proficiency="6/12" />
-              <SkillBar skillName="Heroku" proficiency="7/12" />
-              <SkillBar skillName="Netlify" proficiency="9/12" />
-              <SkillBar skillName="Vercel" proficiency="9/12" />
-              <SkillBar skillName="Docker" proficiency="9/12" />
-              <SkillBar skillName="Kubernetes" proficiency="8/12" />
-              <SkillBar skillName="Jenkins" proficiency="5/12" />
+              <SkillBar skillName="HTML & CSS" proficiency="90.00" />
+              <SkillBar skillName="React JS" proficiency="75.00" />
+              <SkillBar skillName="Node JS" proficiency="60.00" />
+              <SkillBar skillName="Spring Boot" proficiency="60.00" />
+              <SkillBar skillName="MongoDB" proficiency="55.90" />
+              <SkillBar skillName="MySQL" proficiency="60.0" />
+              <SkillBar skillName="Git" proficiency="80.00" />
+              <SkillBar skillName="Tailwind CSS" proficiency="75.00" />
+              <SkillBar skillName="Bootstrap" proficiency="55.78" />
+              <SkillBar skillName="Java" proficiency="80.00" />
+              <SkillBar skillName="JavaScript" proficiency="75.0" />
+              <SkillBar skillName="Python" proficiency="30.00" />
+              <SkillBar skillName="C++" proficiency="68.57" />
+              <SkillBar skillName="SQL" proficiency="55.98" />
+              <SkillBar skillName="Firebase" proficiency="40.56" />
+              <SkillBar skillName="Heroku" proficiency="40.52" />
+              <SkillBar skillName="Netlify" proficiency="45.68" />
+              <SkillBar skillName="Vercel" proficiency="54.25" />
+              <SkillBar skillName="Docker" proficiency="55.02" />
+              <SkillBar skillName="Kubernetes" proficiency="55.05" />
+              <SkillBar skillName="AWS" proficiency="65.02" />
             </div>
 
             <div className="mt-12 flex justify-between text-center">
@@ -69,7 +68,7 @@ const About = () => {
                   className="text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-green-400 to-blue-500"
                 >
-                  10+
+                  30+
                 </h3>
                 <p>Happy Clients</p>
               </div>
