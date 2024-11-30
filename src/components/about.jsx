@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImage from "../assets/aboutme-image.png";
+import SkillBar from "../components/skillBar";
 
 const About = () => {
   return (
@@ -20,40 +21,30 @@ const About = () => {
               seamless and efficient user experiences.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
+              <SkillBar skillName="HTML & CSS" proficiency="11/12" />
+              <SkillBar skillName="React JS" proficiency="10/12" />
+              <SkillBar skillName="Node JS" proficiency="9/12" />
+              <SkillBar skillName="Spring Boot" proficiency="9/12" />
+              <SkillBar skillName="MongoDB" proficiency="8/12" />
+              <SkillBar skillName="MySQL" proficiency="9/12" />
+              <SkillBar skillName="Git" proficiency="10/12" />
+              <SkillBar skillName="Tailwind CSS" proficiency="11/12" />
+              <SkillBar skillName="Bootstrap" proficiency="8/12" />
+              <SkillBar skillName="Java" proficiency="10/12" />
+              <SkillBar skillName="JavaScript" proficiency="9/12" />
+              <SkillBar skillName="Python" proficiency="4/12" />
+              <SkillBar skillName="C++" proficiency="8/12" />
+              <SkillBar skillName="SQL" proficiency="7/12" />
+              <SkillBar skillName="PostgreSQL" proficiency="5/12" />
+              <SkillBar skillName="Firebase" proficiency="6/12" />
+              <SkillBar skillName="Heroku" proficiency="7/12" />
+              <SkillBar skillName="Netlify" proficiency="9/12" />
+              <SkillBar skillName="Vercel" proficiency="9/12" />
+              <SkillBar skillName="Docker" proficiency="9/12" />
+              <SkillBar skillName="Kubernetes" proficiency="8/12" />
+              <SkillBar skillName="Jenkins" proficiency="5/12" />
             </div>
+
             <div className="mt-12 flex justify-between text-center">
               <div>
                 <h3
