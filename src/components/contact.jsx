@@ -1,7 +1,35 @@
 import React from "react";
+import { useState } from "react";
+import emailjs from "emailjs-com";
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
+  // State to manage submission status
+  const [isSent, setIsSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log("Send button clicked"); // Debugging log
+
+    emailjs
+      .sendForm(
+        "service_aq2w75o",
+        "template_13frd5q",
+        e.target,
+        "NoV3QOf21blLwTjx5"
+      )
+      .then(
+        (result) => {
+          console.log("Email successfully sent!", result.text);
+          setIsSent(true); // Set sent status to true on success
+        },
+        (error) => {
+          console.log("Failed to send email.", error.text);
+          setIsSent(false); // Optionally handle error state
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="bg-black text-white py-20" id="contact">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
@@ -38,13 +66,15 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex-1 w-full">
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={sendEmail}>
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Your Name
                 </label>
                 <input
                   type="text"
+                  name="from_name"
+                  id="name"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400"
                   placeholder="Enter You Name"
@@ -55,7 +85,9 @@ const Contact = () => {
                   Email
                 </label>
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
+                  id="email"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400"
                   placeholder="Enter You Email"
@@ -66,7 +98,9 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  type="text"
+                  type="message"
+                  name="message"
+                  id="message"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                     focus:border-green-400"
                   rows="5"
@@ -74,11 +108,15 @@ const Contact = () => {
                 />
               </div>
               <button
+                type="submit"
                 className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
               >
                 Send
               </button>
+              {isSent && (
+                <p className="text-green-400">Email successfully sent!</p>
+              )}
             </form>
           </div>
         </div>
