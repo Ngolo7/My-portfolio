@@ -40,16 +40,36 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Durga. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a
+              href="https://facebook.com/YourFacebookProfile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
               <FaFacebook />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a
+              href="https://twitter.com/YourTwitterProfile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
               <FaTwitter />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a
+              href="https://linkedin.com/in/durga-gurung"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
               <FaLinkedin />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a
+              href="https://github.com/Ngolo7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white"
+            >
               <FaGithub />
             </a>
           </div>
